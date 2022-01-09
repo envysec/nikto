@@ -49,6 +49,8 @@ sub nikto_auth_init {
 sub nikto_auth_load {
     $REALMS = init_db("db_realms");
 
+    print('HELLO');
+
     if (defined $CLI{'hostauth'}) {
         my @x = split(/:/, $CLI{'hostauth'});
 
